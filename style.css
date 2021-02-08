@@ -6,7 +6,7 @@
 
 body {
   background-color: #f9fafb;
-  font-family: "Open Sans", sans-sarif;
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,25 +31,26 @@ h2 {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 500px;
+  margin: 10px;
 }
 
-.form {
+.container .form {
   padding: 30px 40px;
 }
 
-.form .form-control {
-  margin-bottom: 20px;
-  padding-top: 10px;
+.container .form .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
   position: relative;
 }
 
-.form .form-control label {
+.container .form .form-control label {
   color: #777;
   display: block;
   margin-bottom: 5px;
 }
 
-.form .form-control input {
+.container .form .form-control input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -58,32 +59,32 @@ h2 {
   font-size: 14px;
 }
 
-.form .form-control input:focus {
+.container .form .form-control input:focus {
   outline: 0px;
   border-color: #777;
 }
 
-.form .form-control .success input {
-  background-color: #2ecc71;
-}
-
-.form .form-control .error input {
-  background-color: #e74c3c;
-}
-
-.form .form-control .error small {
-  visibility: visible;
-}
-
-.form .form-control small {
+.container .form .form-control small {
   color: #e74c3c;
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   visibility: hidden;
 }
 
-.form button {
+.container .form .form-control.success input {
+  background-color: #2ecc71;
+}
+
+.container .form .form-control.error input {
+  border-color: #e74c3c;
+}
+
+.container .form .form-control.error small {
+  visibility: visible;
+}
+
+button {
   cursor: pointer;
   background-color: #3498db;
   border: 2px solid #3498db;
@@ -94,5 +95,11 @@ h2 {
   width: 100%;
   font-size: 14px;
   display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
