@@ -73,7 +73,7 @@ h2 {
 }
 
 .container .form .form-control.success input {
-  background-color: #2ecc71;
+  border-color: #2ecc71;
 }
 
 .container .form .form-control.error input {
